@@ -1,0 +1,15 @@
+$color: rgb(255,100,58);
+header{
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background-color: $color;
+    
+    @if $color == rgb(255,100,58){
+        color: white;
+    }@else if $color == red{
+        color: black;
+    } @else{
+        color: green;
+    }
+}

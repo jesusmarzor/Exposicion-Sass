@@ -1,0 +1,66 @@
+header {
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  background-color: #ff643a;
+  color: white;
+}
+
+#cajas {
+  display: flex;
+}
+#cajas .caja {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px auto;
+  background-color: green;
+  border: 10px solid orange;
+}
+#cajas .caja .info {
+  font-size: 15px;
+}
+#cajas .caja:first-child {
+  border: 15px solid red;
+}
+
+.alert-danger, .alert-success, .alert {
+  border: 1px solid gray;
+  background-color: #ccc;
+  color: gray;
+  padding: 50px;
+  width: 150px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.alert-success {
+  color: green;
+  border: 5px solid green;
+}
+
+.alert-danger {
+  color: red;
+  border: 5px solid red;
+}
+
+.listado ul li:nth-child(1) {
+  color: orangered;
+  font-size: 10px;
+}
+
+.listado ul li:nth-child(2) {
+  color: orangered;
+  font-size: 20px;
+}
+
+.listado ul li:nth-child(3) {
+  color: orangered;
+  font-size: 30px;
+}
+
+.listado ul li:nth-child(4) {
+  color: orangered;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */

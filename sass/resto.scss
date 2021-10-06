@@ -1,0 +1,62 @@
+@mixin crearBordes($tam, $colorBorde) {
+    border: $tam solid $colorBorde;
+}
+#cajas{
+    display: flex;
+    .caja{
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px auto;
+        background-color: green;
+        @include crearBordes(10px,orange);
+        .info{
+            font-size: 15px;
+        }
+    }
+    .caja:first-child{
+        @include crearBordes(15px,red)
+    }
+}
+%alert-normal{
+    @include crearBordes(1px, gray);
+    background-color: #ccc;
+    color: gray;
+    padding: 50px;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center
+}
+
+.alert{
+    @extend %alert-normal;
+}
+
+.alert-success{
+    @extend %alert-normal;
+    color: green;
+    @include crearBordes(5px, green);
+}
+
+.alert-danger{
+    @extend %alert-normal;
+    color: red;
+    @include crearBordes(5px, red);
+}
+
+$contador: 1;
+
+@for $contador from 1 through 4{
+    .listado ul li:nth-child(#{$contador}){
+        color: orangered;
+        font-size: $contador * 10px ;
+    }
+}
+
+// $i: 1;
+// @while $i <= 4 {
+// 	.listado ul li:nth-child(#{$i}){
+//         color: orangered;
+//         font-size: $i * 10px ;
+//     }
+//     $i: $i + 1;
+// }

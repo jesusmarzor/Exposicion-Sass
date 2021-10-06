@@ -1,5 +1,5 @@
 # Exposición Sass
-Exposición que tuve que presentar a mis compañeros en la asignatura Tecnologías Web (2020-2021)
+Exposición de [Sass](https://sass-lang.com/)(preprocesador de css) que tuve que presentar a mis compañeros en la asignatura Tecnologías Web (2020-2021)
 
 ## Autor ✒️
 **Jesús Martín Zorrilla** - *Trabajo Inicial y Documentación*
